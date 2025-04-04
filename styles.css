@@ -1,4 +1,4 @@
-
+/* General Styling */
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #F7F7F7;
@@ -7,6 +7,13 @@ body {
     padding: 0;
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
 .logo img {
     width: 80px; 
@@ -15,11 +22,15 @@ body {
     object-fit: cover;
 }
 
-
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+}
+
+nav ul li {
+    list-style: none;
 }
 
 nav ul li a {
@@ -27,31 +38,46 @@ nav ul li a {
     color: #333;
 }
 
-
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero .text {
+    flex: 1;
 }
 
 .hero-image img {
     width: 250px; 
     height: 150px;
-    border-radius: 15px; 
+    border-radius: 15px;
     object-fit: cover;
 }
 
+/* Feature Image */
+.feature-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 
 .feature-image img {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     border-radius: 20px;
-    object-fit: cover;
-    display: block;
-    margin: 20px auto;
 }
 
+/* Call to Action Button */
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 .btn {
     display: inline-block;
@@ -67,7 +93,7 @@ nav ul li a {
     background-color: #F5A623;
 }
 
-
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
