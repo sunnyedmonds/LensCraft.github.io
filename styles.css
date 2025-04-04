@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #F7F7F7;
@@ -7,12 +7,12 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 50px;
+    background: #fff;
 }
 
 .logo img {
@@ -22,62 +22,49 @@ header {
     object-fit: cover;
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
-nav ul li {
-    list-style: none;
-}
-
 nav ul li a {
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
     color: #333;
+    background: #D8A7A2;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-/* Hero Section */
+nav ul li a:hover {
+    background: #F5A623;
+}
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hero .text {
-    flex: 1;
+    padding: 20px;
 }
 
 .hero-image img {
-    width: 250px; 
-    height: 150px;
-    border-radius: 15px;
+    width: 550px; 
+    height: 350px;
+    border-radius: 15px; 
     object-fit: cover;
 }
 
-/* Feature Image */
-.feature-image {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
 
 .feature-image img {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Call to Action Button */
-.cta {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
 .btn {
     display: inline-block;
@@ -93,11 +80,14 @@ nav ul li a {
     background-color: #F5A623;
 }
 
-/* Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #333;
     color: white;
+}
+.cta    {
+    text-align: center;
 }
