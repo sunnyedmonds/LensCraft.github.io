@@ -1,38 +1,28 @@
-/* Body Styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #F7F7F7;
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Align the elements vertically */
 }
 
-/* Header Styles */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background: #fff;
-    width: 100%;
-    position: absolute;
-    top: 0;
 }
 
-/* Logo Image */
-.logo img {
+header .logo img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -46,27 +36,33 @@ nav ul li a {
     background: #D8A7A2;
     padding: 10px 15px;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
     background: #F5A623;
 }
 
-hero {
+/* Hero Section */
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 50px 20px;
+    background-color: #F1F1F1;
+    text-align: center;
 }
 
-h1 {
-    font-family: Playfair display;
+.hero h1 {
+    font-family: Playfair Display, serif;
     font-size: 48px;
+    margin-bottom: 20px;
 }
 
-p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .hero-image img {
@@ -74,17 +70,11 @@ p {
     height: 350px;
     border-radius: 15px;
     object-fit: cover;
-}
-
-.feature-image img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 20px;
-    object-fit: cover;
     display: block;
     margin: 20px auto;
 }
 
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -93,46 +83,46 @@ p {
     text-decoration: none;
     border-radius: 20px;
     transition: background 0.3s ease;
+    margin-top: 20px;
 }
 
 .btn:hover {
     background-color: #F5A623;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.cta {
-    text-align: center;
-}
-
+/* About Us Section */
 .aboutus {
     text-align: center;
+    padding: 40px 20px;
 }
 
-/* New portrait container to center the image */
+.aboutus h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.aboutus p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Portrait Image */
 .portrait-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Adds margin to separate the image from the text */
+    margin: 20px 0;
 }
 
-/* Portrait styling */
 .portrait {
-    height: 650px;
-    width: 450px;
+    height: 450px;
+    width: 350px;
     border-radius: 15px;
     object-fit: cover;
 }
 
-
-
+/* Sign-up Form */
 .signup-container {
     background-color: white;
     padding: 30px;
@@ -140,35 +130,15 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    text-align:  center;
+    margin: 0 auto;
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
+.signup-container h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-/* Sign-up Container */
-.signup-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px !important;  /* Forces it to stay at max-width 400px */
-    text-align: center;
-    margin: 0 auto;  /* Centers it */
-}
-
-
-/* Header inside Sign-up Box */
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Input Fields */
 .input-field {
     width: 100%;
     padding: 10px;
@@ -183,7 +153,6 @@ h1 {
     outline: none;
 }
 
-/* Sign-up Button */
 .signup-btn {
     width: 100%;
     padding: 12px;
@@ -200,7 +169,6 @@ h1 {
     background-color: #F5A623;
 }
 
-/* Footer Text and Links */
 .signup-footer {
     text-align: center;
     margin-top: 15px;
@@ -215,14 +183,46 @@ h1 {
     color: #F5A623;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #333;
     color: white;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F5A623;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .signup-container {
+        width: 90%;
+    }
 }
