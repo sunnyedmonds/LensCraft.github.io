@@ -50,6 +50,7 @@ nav ul li a:hover {
 h1 {
     font-family: Playfair display;
     font-size: 48px;
+    text-align: center;
 }
 
 p {
@@ -103,18 +104,22 @@ footer {
     text-align: center;
 }
 
-/* New portrait container to center the image */
+
 .portrait-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0; /* Adds margin to separate the image from the text */
+    margin: 20px 0; 
 }
 
-/* Portrait styling */
+
 .portrait {
     height: 650px;
     width: 450px;
     border-radius: 15px;
     object-fit: cover;
+}
+footer img {
+    width: 50px;
+    height: auto;
 }
